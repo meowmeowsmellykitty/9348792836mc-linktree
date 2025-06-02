@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>smlly:3 Links</title>
+	  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+    <style>
+
+     
+	@keyframes sway {
+  	  0% { transform: rotate(-3deg); }
+   	 50% { transform: rotate(3deg); }
+   	 100% { transform: rotate(-3deg); }
+	}
+
+	@keyframes rainbow {
+ 	   0% { color: red; }
+  	  16% { color: orange; }
+ 	   33% { color: yellow; }
+	    50% { color: green; }
+   	 66% { color: blue; }
+   	 83% { color: indigo; }
+   	 100% { color: violet; }
+	}
+
+
+        body {
+            font-family: 'Press Start 2P', monospace;
+            background: url('https://media1.tenor.com/m/CP1J0qWI1fIAAAAd/koishi-touhou.gif') repeat center center fixed;
+            background-size: cover;
+	    color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+            padding: 40px 20px;
+        }
+        .profile {
+            background: rgba(26, 26, 26, 0.85);
+            border-radius: 16px;
+            padding: 20px;
+            width: 100%;
+            max-width: 400px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.8);
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .profile img {
+            width: 100px;
+            height: 100px;
+            border-radius: 12px;
+            margin-bottom: 15px;
+        }
+	.profile h1 {
+	 font-size: 1.8em;
+   	 margin: 10px 0;
+   	 font-family: 'Press Start 2P', cursive;
+  	 animation: sway 3s infinite ease-in-out, rainbow 5s infinite linear;
+        }
+        .profile p {
+            font-size: 0.9em;
+            color: #bbb;
+            margin: 5px 0;
+        }
+        .links a {
+            display: block;
+            background: rgba(34, 34, 34, 0.85);
+            color: #fff;
+            text-decoration: none;
+            margin: 10px 0;
+            padding: 12px;
+            border-radius: 10px;
+            font-size: 1.05em;
+            transition: background 0.3s, transform 0.2s;
+        }
+        .links a:hover {
+            background: rgba(51, 51, 51, 0.9);
+            transform: scale(1.05);
+        }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            console.log('Page loaded');
+            const links = document.querySelectorAll('.links a');
+            links.forEach(link => {
+                console.log('Button setup for:', link.href);
+                link.addEventListener('mouseenter', () => console.log('Hovering over:', link.href));
+                link.addEventListener('click', () => console.log('Clicked on:', link.href));
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="profile">
+        <img src="https://avatars.fastly.steamstatic.com/519f5a57859ab4802a897c9e49c2c656939c811b_full.jpg" alt="Profile Picture">
+        <h1>smelly limk tree lol haha loool</h1>
+        <p>this is mostly wip www</p>
+        <p>im so cool that i own my own LINKTREE! how unique is that ! ! !</p>
+        <p>s1ftmr</p>
+    </div>
+    <div class="links">
+        <a href="https://www.roblox.com/users/549004853/profile" target="_blank">Roblox Profile</a>
+        <a href="https://steamcommunity.com/profiles/76561199178048177/" target="_blank">Steam Profile</a>
+        <a href="https://www.youtube.com/@19war.monger75" target="_blank">YouTube Channel</a>
+        <a href="https://discordapp.com/users/1151416054732554270" target="_blank">Discord User</a>
+    </div>
+</body>
+</html>
